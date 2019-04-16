@@ -26,6 +26,7 @@ If all the input fields are filled and the conditions are met then an alert mess
 ![form one](Images/index_4.PNG) <br><br>
 
 The uploaded images/files are then stored on the server while the file description and file name are stored in the MySQL database. <br><br>
+![form one](Images/table.PNG) <br><br>
 
 This image shows one of the two tables that give the full path to the files that were uploaded by the user. These files can be accessed easily by clicking on the file name. <br><br>
 ![form one](Images/index_5.PNG) <br><br>
