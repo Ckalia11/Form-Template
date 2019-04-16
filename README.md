@@ -18,3 +18,9 @@ This image displays the first half of the form on a mobile device. The form cont
 
 This image shows the second half of the form on a larger screen size. <br><br>
 ![form one](Images/form_2.PNG) <br><br>
+
+This image shows the error handling aspect of the form. The form only allows the user to submit the form if all the conditions are met. An example of this for the first three input fields are shown below. <br><br>
+![form one](Images/index_3.PNG) <br><br>
+
+If all the input fields are filled and the conditions are met then an alert message pops up telling the user their file has been uploaded and that the data was inserted successfully. <br><br>
+![form one](Images/index_4.PNG) <br><br>
