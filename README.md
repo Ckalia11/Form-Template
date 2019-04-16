@@ -24,3 +24,11 @@ This image shows the error handling aspect of the form. The form only allows the
 
 If all the input fields are filled and the conditions are met then an alert message pops up telling the user their file has been uploaded and that the data was inserted successfully. <br><br>
 ![form one](Images/index_4.PNG) <br><br>
+
+The uploaded images/files are then stored on the server while the file description and file name are stored in the MySQL database. <br><br>
+
+This image shows one of the two tables that give the full path to the files that were uploaded by the user. These files can be accessed easily by clicking on the file name. <br><br>
+![form one](Images/index_5.PNG) <br><br>
+
+This image shows the second table that displays the user information entered in the form. The arrays are unserialized so they can be understood. The form allows the retrieval of any given row from the database table or it gives the option to display every single row in the table as shown. <br><br>
+![form one](Images/index_6.PNG) <br><br>
