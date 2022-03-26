@@ -1,5 +1,5 @@
 <?php
-require_once('c://xampp_2/htdocs/Form/Files/form/load.php');
+require_once('c://xampp/htdocs/Form/Files/form/load.php');
 
 
 // connection to database 
