@@ -1,5 +1,5 @@
 # PHP/MySQL Multipurpose Template_Form
-This form is a secure PHP form made for Raymond James Ltd. This form is considered a template form since it contains distinctive features 
+This form is a secure PHP form made at a previous co-op. This form is considered a template form since it contains distinctive features 
 that can be used or discarded for any purpose. <br> <br>
 This form undergoes both form validation and input validation protecting against SQL Injection and Cross Site Scripting Attacks using PHP methods.
 <br> <br> The form uses cookies to save user input and stores them in a MySQL database. This data is then displayed in tables for use.
