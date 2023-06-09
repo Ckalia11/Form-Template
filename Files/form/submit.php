@@ -24,7 +24,7 @@
             chmod( $target_file, 0644 ); // security precaution
       
           // database connection
-          $mysqli = new mysqli (DB_HOST, DB_USER, DB_PASS, DB_NAME);
+          $mysqli = new mysqli ($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
             
           if ($mysqli->connect_errno) {
                 printf("Connect failed: %s\n", $mysqli->connect_error); // database connection check
