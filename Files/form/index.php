@@ -4,7 +4,7 @@
 
 <?php
   require_once('load.php');
-  require_once('c://xampp/htdocs/form/files/error_handling/form_validation/form_validation.php');
+  require_once('../error_handling/form_validation/form_validation.php');
   require_once('submit.php');
   require_once('header.php');
   require_once('form.php');

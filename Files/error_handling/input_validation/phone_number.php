@@ -3,7 +3,7 @@
   // error checking for phone number field
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["phone_number"])) {
-        $phone_numberErr = " * Phone Number is required"; 
+        $phone_numberErr = " * Phone number is required"; 
       } else {
         // $phone_number = test_input($_POST["phone_number"]);
         $phone_number = $_POST["phone_number"];

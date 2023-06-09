@@ -2,14 +2,22 @@
 
 if (isset($_POST['submit'])) :
  if (($insert == true) && ($execute == true)) : ?>
-  <div class="message">
-  <p class = "success">Data was inserted successfully</p>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+   Data was inserted successfully
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
  <?php else : ?>
-  <p class = "error">The Information Entered Contained Errors.</p>
+   <div class="alert alert-danger alert-dismissible fade show" role="alert">
+   The Information Entered Contained Errors.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
   <?php endif; ?>
-   </div>
-   <?php endif; ?>
+<?php endif; ?>
 
-<div class="first">
-<p> Please Fill Out The Information Below.</p>
+<div class="alert alert-info" role="alert">
+Please Fill Out The Information Below
 </div>

@@ -1,4 +1,4 @@
-<?php require_once('c://xampp/htdocs/form/Files/form/load.php'); 
+<?php require_once('../Files/form/load.php'); 
 global $results;
 ?>
 <!DOCTYPE html>
