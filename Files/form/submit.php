@@ -20,6 +20,7 @@
         }
         
         else{
+          echo '<h1>No errors</h1>';
             // move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
             // chmod( $target_file, 0644 ); // security precaution
       
@@ -27,6 +28,7 @@
           $mysqli = new mysqli ($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
             
           if ($mysqli->connect_errno) {
+                echo '<h1>Failed connection</h1>';
                 printf("Connect failed: %s\n", $mysqli->connect_error); // database connection check
                 exit();
             }
@@ -44,6 +46,8 @@
         );
         
         $insert = $stmt->execute();
+
+        echo '<h1>Sucess exec</h1>';
       
         //   //insert into database table "upload"
         // if(!empty($description)){
