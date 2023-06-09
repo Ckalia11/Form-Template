@@ -1,18 +1,19 @@
-<?php
-
+   <?php
    if ($calc_hash == $form_hash){
-     
+
     //input validation
-      require_once($error.'test_input_function.php');
-      require_once($error.'name.php');
-      require_once($error.'email.php');
-      require_once($error.'phone_number.php');
-      require_once($error.'radio_button.php');
-      require_once($error.'checkbox.php');
-      require_once($error.'text_box.php');
-      require_once($error.'dropdown.php');
-      require_once($error.'description.php');
-      require_once($error.'file.php');
+      $input_validation_path = __DIR__.'/../error_handling/input_validation/';
+      require_once($input_validation_path.'test_input_function.php');
+      require_once($input_validation_path.'name.php');
+      require_once($input_validation_path.'email.php');
+      require_once($input_validation_path.'phone_number.php');
+      require_once($input_validation_path.'radio_button.php');
+      require_once($input_validation_path.'checkbox.php');
+      require_once($input_validation_path.'text_box.php');
+      require_once($input_validation_path.'dropdown.php');
+      require_once($input_validation_path.'description.php');
+      require_once($input_validation_path.'file.php');
+
       
         // if errors are returned, connection won't be made to MYSQL database
       if( $nameErr || $emailErr || $phone_numberErr || $radio_buttonErr || $checkboxErr || $countryErr|| $text_boxErr || $descriptionErr || $fileErr ){
@@ -66,14 +67,12 @@
         $description = '';
 
         // Redirect to a different page after processing
-        header("Location: thank-you.php");
+        header("Location: ./Files/form/thank-you.php");
         exit(); 
 
         }
-      
       }
       else {
         $insert= false;
       }
       ?>
-      

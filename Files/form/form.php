@@ -1,6 +1,6 @@
 
     <form action="" method="post" enctype="multipart/form-data">
-    <?php require_once('messages.php'); ?>
+    <?php require_once(__DIR__.'/messages.php'); ?>
      
     <!-- hidden input fields used for form validation -->
      <input type="hidden" name="timestamp" value="<?php echo $time; ?>">
@@ -10,7 +10,7 @@
       <!-- name input field -->
           <h3 id ="name_title" class="title">Name</h3>
           <input type="text" class="text" name="name" placeholder="Enter your name" value ="<?php echo $name;?>">
-         <p class = "error"><?php echo $nameErr;?></p>
+          <p class = "error"><?php echo $nameErr;?></p>
       
       <!-- email input field -->
       

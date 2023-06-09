@@ -3,7 +3,7 @@
         
      $tmp_name= $_FILES['file']['tmp_name'];  // temporary storage of file
  
-     $target_dir= '../../Uploads/'; //permanent storage of file
+     $target_dir= __DIR__.'/../../../Uploads/'; //permanent storage of file
  
      $target_file = $target_dir . basename($myname);
  
