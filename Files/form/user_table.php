@@ -17,7 +17,7 @@ if ( ! function_exists( '_e' ) ) {
     }
 }
 
-$mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME); // database connection
+$mysql = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME); // database connection
 
 // OPTION 1: DISPLAY ALL DATA FROM THE TABLE
 

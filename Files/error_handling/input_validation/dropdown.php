@@ -5,7 +5,7 @@
         $countryErr = " * Dropdown selection is required"; 
       } else {
         $country = test_input($_POST["country"]);
-        if (!filter_var($country, FILTER_SANITIZE_STRING)) {
+        if (!filter_var($country, FILTER_SANITIZE_FULL_SPECIAL_CHARS)) {
           $countryErr = " * Invalid Selection"; 
         }
       }

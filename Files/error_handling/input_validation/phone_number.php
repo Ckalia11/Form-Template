@@ -8,7 +8,7 @@
         // $phone_number = test_input($_POST["phone_number"]);
         $phone_number = $_POST["phone_number"];
         // removes all characters except digits, plus and minus sign.
-        if (!filter_var($phone_number, FILTER_SANITIZE_STRING )) { 
+        if (!filter_var($phone_number, FILTER_SANITIZE_FULL_SPECIAL_CHARS)) { 
           $phone_numberErr = " * Invalid Phone Number"; 
         }
         if(!(strlen($phone_number) == 12)){

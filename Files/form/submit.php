@@ -1,7 +1,6 @@
    <?php
    if ($calc_hash == $form_hash){
 
-    //input validation
       $input_validation_path = __DIR__.'/../error_handling/input_validation/';
       require_once($input_validation_path.'test_input_function.php');
       require_once($input_validation_path.'name.php');
@@ -24,7 +23,7 @@
             chmod( $target_file, 0644 ); // security precaution
       
           // database connection
-          $mysqli = new mysqli (DB_HOST, DB_USER, DB_PASS, DB_NAME);
+          $mysqli = new mysqli ($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
             
           if ($mysqli->connect_errno) {
                 printf("Connect failed: %s\n", $mysqli->connect_error); // database connection check
@@ -44,7 +43,7 @@
         );
         
         $insert = $stmt->execute();
-      
+
           //insert into database table "upload"
         if(!empty($description)){
           $query = "INSERT INTO upload (description, filename) VALUES ('$description', '$myname')";
@@ -67,7 +66,7 @@
         $description = '';
 
         // Redirect to a different page after processing
-        header("Location: ./Files/form/thank-you.php");
+        header("Location: ./thank-you.php");
         exit(); 
 
         }
