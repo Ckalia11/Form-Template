@@ -1,5 +1,5 @@
 <?php
-define("NONCE_SALT", "INSERT RANDOM STRING");
+define("NONCE_SALT", "PAV9VePyxVGCULYiq4YQ");
 
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $DB_HOST   = "localhost";

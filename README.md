@@ -1,7 +1,13 @@
 # Employment Form
 
 ## About
-This form is a secure PHP form made at a previous co-op. This form is considered a template form since it contains distinctive features 
-that can be used or discarded for any purpose. The form undergoes both form validation and input validation and displays intuitive messages to the user. The form also protects against SQL Injection and Cross Site Scripting attacks through data sanitization/escaping, prepared statements, and a secure hashing algorithm. The form uses PHP sessions and cookies to improve the user experience, such that data is saved across different pages and submit requests. Employee data is stored in MySQL. The form is delivered through a responsive and cross-platform user interface using HTML5, CSS3 and Bootstrap. Each component of the form is stored in a seperate file which is then required in the index.php file. This allows any component of the form to be easily modifiable, which is the purpose for a template form.
+This repository contains a secure PHP form template that can be used for various purposes. The form includes several distinct features and provides robust validation mechanisms for both form and input data. Users are presented with intuitive messages for better usability.
 
-Live Demo: https://employment-form.herokuapp.com/
+To ensure security, the form has implemented measures against SQL Injection and Cross-Site Scripting attacks. These include data sanitization/escaping, prepared statements, and a secure hashing algorithm.
+
+Form data is securely stored in a MySQL database. Additonally, the form is delivered through a responsive and cross-platform user interface, leveraging HTML5, CSS3, and Bootstrap. Each component of the form and its respective validation logic is stored in separate file, which are then required in the index.php file. This modular structure allows for easy modification of any form component.
+
+Live Demo: employment-form.herokuapp.com
+
+Feel free to explore the live demo and utilize this template form for your specific needs.
+
