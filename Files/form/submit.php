@@ -45,11 +45,12 @@
         
         $insert = $stmt->execute();
 
-        //   //insert into database table "upload"
-        // if(!empty($description)){
-        //   $query = "INSERT INTO upload (description, filename) VALUES ('$description', '$myname')";
-        //   $execute= $mysqli->query( $query );
-        //   }
+          //insert into database table "upload"
+        if(!empty($description)){
+          echo "<h1>Not Empty description!!!</h1>";
+          $query = "INSERT INTO upload (description, filename) VALUES ('$description', '$myname')";
+          $execute= $mysqli->query( $query );
+          }
         
          // close connection
         $stmt->close();
