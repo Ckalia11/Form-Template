@@ -67,7 +67,7 @@
         $description = '';
 
         // Redirect to a different page after processing
-        header("Location: ./Files/form/thank-you.php");
+        header("Location: ./thank-you.php");
         exit(); 
 
         }
