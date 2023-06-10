@@ -1,7 +1,6 @@
    <?php
    if ($calc_hash == $form_hash){
 
-    //input validation
       $input_validation_path = __DIR__.'/../error_handling/input_validation/';
       require_once($input_validation_path.'test_input_function.php');
       require_once($input_validation_path.'name.php');
