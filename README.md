@@ -1,4 +1,4 @@
-# Employment Form
+# Form Template
 
 ## About
 This repository contains a secure PHP form template that can be used for various purposes. The form includes several distinct features and provides robust validation mechanisms for both form and input data. Users are presented with intuitive messages for better usability.
