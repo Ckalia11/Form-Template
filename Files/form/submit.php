@@ -25,11 +25,8 @@
       
           // database connection
           $mysqli = new mysqli ($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
-
-          echo "Connected successfully";
             
           if ($mysqli->connect_errno) {
-                echo '<h1>Failed connection</h1>';
                 printf("Connect failed: %s\n", $mysqli->connect_error); // database connection check
                 exit();
             }

@@ -6,7 +6,7 @@
     } else {
       $name = test_input($_POST["name"]);
       // removes tags from name
-      if (!filter_var($name, FILTER_SANITIZE_STRING)) { 
+      if (!filter_var($name, FILTER_SANITIZE_FULL_SPECIAL_CHARS)) { 
         $nameErr = " * Invalid name format"; 
       }
     }

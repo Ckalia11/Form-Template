@@ -5,7 +5,7 @@
         $text_boxErr = " * Textbox entry is required";
       } else {
         $text_box = test_input($_POST["text_box"]);
-        if (!filter_var($text_box, FILTER_SANITIZE_STRING)) {
+        if (!filter_var($text_box, FILTER_SANITIZE_FULL_SPECIAL_CHARS)) {
           $text_boxErr = " * Invalid Selection"; 
         }
       }

@@ -5,7 +5,7 @@
             $radio_buttonErr = " * Radio Button must be selected"; 
           } else {
             $radio_button = test_input($_POST["radio_button"]);
-            if (!filter_var($radio_button, FILTER_SANITIZE_STRING )) {
+            if (!filter_var($radio_button, FILTER_SANITIZE_FULL_SPECIAL_CHARS )) {
               $radio_buttonErr = " * Invalid Selection"; 
             }
           }
