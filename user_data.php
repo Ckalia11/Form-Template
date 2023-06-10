@@ -42,16 +42,25 @@ while($row = $resource->fetch_object()) {
   <?php
    $row_id = 1;
    if (!empty($results)) {
-   foreach ( $results as $result ) : ?>
+   foreach ( $results as $result ) :
+      $name = strlen($result->name) > 20 ? substr($result->name, 0, 20) . '...' : $result->name;
+      $email = strlen($result->email) > 20 ? substr($result->email, 0, 20) . '...' : $result->email;
+      $phone_number = strlen($result->phone_number) > 15 ? substr($result->phone_number, 0, 15) . '...' : $result->phone_number;
+      $radio_button = strlen($result->radio_button) > 15 ? substr($result->radio_button, 0, 15) . '...' : $result->radio_button;
+      $checkbox = implode(', ', unserialize($result->checkbox));
+      $checkbox = strlen($checkbox) > 20 ? substr($checkbox, 0, 20) . '...' : $checkbox;
+      $country = strlen($result->country) > 15 ? substr($result->country, 0, 15) . '...' : $result->country;
+      $text_box = strlen($result->text_box) > 20 ? substr($result->text_box, 0, 20) . '...' : $result->text_box;
+   ?>
     <tr>
         <th scope="row"><?php echo $row_id ?></th>
-        <td><?php _e($result->name); ?></td>
-        <td><?php _e($result->email); ?></td>
-        <td><?php _e($result->phone_number); ?></td>
-        <td><?php _e($result->radio_button); ?></td>
-        <td><?php _e(implode(', ', unserialize($result->checkbox))); ?></td>
-        <td><?php _e($result->country); ?></td>
-        <td><?php _e($result->text_box); ?></td>
+        <td><?php _e($name); ?></td>
+        <td><?php _e($email); ?></td>
+        <td><?php _e($phone_number); ?></td>
+        <td><?php _e($radio_button); ?></td>
+        <td><?php _e($checkbox); ?></td>
+        <td><?php _e($country); ?></td>
+        <td><?php _e($text_box); ?></td>
     </tr>
     <?php $row_id++; ?>
     <?php endforeach;
