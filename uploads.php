@@ -33,7 +33,7 @@ if (!$result) {
   $row_id = 1;
   while ($row = mysqli_fetch_array($result)):
     $files_field= $row['filename'];
-    $files_show= "../../Uploads/$files_field";
+    $files_show= "Uploads/$files_field";
     $files_link = '<a href="' . $files_show. '">'. $files_field .'</a>';
     $descriptionvalue= $row['description'];
   ?>

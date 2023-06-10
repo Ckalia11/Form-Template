@@ -23,7 +23,10 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/uploads.php">Uploads</a>
+        <a class="nav-link" href="uploads.php">Uploads</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="user_data.php">User Data</a>
       </li>
     </ul>
   </div>
