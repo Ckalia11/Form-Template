@@ -20,8 +20,8 @@
         }
         
         else{
-            // move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
-            // chmod( $target_file, 0644 ); // security precaution
+            move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+            chmod( $target_file, 0644 ); // security precaution
       
           // database connection
           $mysqli = new mysqli ($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
