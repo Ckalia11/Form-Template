@@ -19,5 +19,8 @@ Feel free to explore the live demo and utilize this template form for your speci
 ## Instructions
 - Start Apache and MySQL: In the XAMPP control panel, click the `Start` button next to both Apache and MySQL modules
 - Clone this repository and place it inside the `htdocs` directory of your XAMPP installation
-- Open your web browser and enter `http://localhost/` and you should see the output in your browser
+- To create a new database for the application, open your web browser and go to http://localhost/phpmyadmin/. Click on `Databases` in the top menu and enter the name `form` for the database in the `Create database` field. Click the `Create` button to create the database
+- Click the database you created, and click on the `SQL` tab in the top navigation menu. In the `SQL` tab, click on the `Choose File` button and upload the `database_setup.sql` file in this repository. Click the `Go` button. This will execute the SQL script and create the necessary tables in the database
+- Open your web browser and enter `http://localhost/` and you should see the form in your browser
+
 
